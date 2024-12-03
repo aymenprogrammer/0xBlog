@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --bg-color: #0D1117;
+    --navbar: #010409;
+    --white: #fff;
+    --black: #000;
+    --border: #5b6168;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+/* Start Navbar  */
+.navbar {
+    background-color: var(--navbar);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    background-color: var(--bg-color);
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    color: var(--white);
+    font-size: 18px;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .links a {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.navbar .links a:hover {
+    color: #ccc;
+}
+
+.navbar .switch i {
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar .switch i:hover {
+    color: #ccc;
+}
+
+/* End Navbar */
+
+/* Start Hero */
+.hero {
+    display: flex;
+    height: 90vh;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero .hero-text h1 {
+    color: var(--white);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero .hero-text p {
+    color: var(--border);
+    font-size: 20px;
+    line-height: 1.8rem;
+    max-width: 450px;
+}
+
+.hero .hero-img img {
+    width: 400px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+}
+
+/* End Hero */
+
+/* Start Cards */
+.cards {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cards .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.cards .box {
+    background-color: #21242D;
+    width: calc(33.33% - 20px);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cards .box h3 {
+    color: var(--white);
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cards .box p {
+    color: var(--border);
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* End Cards */
